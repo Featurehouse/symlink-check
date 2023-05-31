@@ -29,7 +29,7 @@ public class SymlinkWarningScreen extends Screen {
                     "See " + SymlinkCheckMod.SYMLINK_MS_LINK, " for more information",
             SymlinkCheckMod.SYMLINK_MS_LINK);
     private static final Component GUI_OPEN_IN_BROWSER = Component.translatable("chat.link.open");
-    private static final Component GUI_COPY_LINK_TO_CLIPBOARD = Component.translatable("gui.copy_link_to_clipboard");
+    private static final Component GUI_COPY_LINK_TO_CLIPBOARD = Component.translatable("symlink_check.gui.copy_link_to_clipboard");
     @Nullable
     private final Screen callbackScreen;
     private final GridLayout layout = new GridLayout().rowSpacing(10);
