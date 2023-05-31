@@ -26,7 +26,7 @@ import org.jetbrains.annotations.Nullable;
 public class SymlinkWarningScreen extends Screen {
     private static final Component TITLE = Component.translatableWithFallback("symlink_warning.title", "World folder contains symbolic links").withStyle(ChatFormatting.BOLD);
     private static final Component MESSAGE_TEXT = Component.translatableWithFallback("symlink_warning.message", "Loading worlds with symlink may be unsafe to your device. " +
-                    "See " + SymlinkCheckMod.SYMLINK_MS_LINK, " for more information",
+                    "See " + SymlinkCheckMod.SYMLINK_MS_LINK + " for more information",
             SymlinkCheckMod.SYMLINK_MS_LINK);
     private static final Component GUI_OPEN_IN_BROWSER = Component.translatable("chat.link.open");
     private static final Component GUI_COPY_LINK_TO_CLIPBOARD = Component.translatable("symlink_check.gui.copy_link_to_clipboard");
