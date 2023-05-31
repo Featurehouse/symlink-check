@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.featurehouse.mcmod.symlinkcheck.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "CMixinEditWorldScreen",
+    "CMixinWorldSelectionListEntry"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "plugin": "org.featurehouse.mcmod.symlinkcheck.mixin.PluginEditWorldScreen"
+}

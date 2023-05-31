@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.featurehouse.mcmod.symlinkcheck.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinLevelStorageSource",
+    "MixinServerMain"
+  ],
+  "client": [
+    "CMixinWorldOpenFlows",
+    "CMixinMinecraft"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
