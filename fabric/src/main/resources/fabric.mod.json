@@ -2,9 +2,11 @@
   "schemaVersion": 1,
   "id": "symlink-check",
   "version": "${version}",
-  "name": "symlink-check",
-  "description": "",
-  "authors": [],
+  "name": "Symlink Check",
+  "description": "Displays a warning screen when trying to open a world with symlink",
+  "authors": [
+    "teddyxlandlee"
+  ],
   "contact": {
     "link": "https://aka.ms/MinecraftSymLinks"
   },

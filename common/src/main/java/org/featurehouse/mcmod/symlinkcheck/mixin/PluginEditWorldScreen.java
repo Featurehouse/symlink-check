@@ -1,6 +1,7 @@
 package org.featurehouse.mcmod.symlinkcheck.mixin;
 
 import org.apache.commons.lang3.tuple.ImmutableTriple;
+import org.featurehouse.mcmod.symlinkcheck.MappingProvider;
 import org.featurehouse.mcmod.symlinkcheck.SafeStorageSource;
 import org.featurehouse.mcmod.symlinkcheck.impl.ImplLevelStorageSource;
 import org.featurehouse.mcmod.symlinkcheck.marks.Mark0;
@@ -18,8 +19,8 @@ import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
-import static org.featurehouse.mcmod.symlinkcheck.MappingConstants.*;
 import static org.objectweb.asm.Opcodes.*;
+import static org.featurehouse.mcmod.symlinkcheck.MappingProvider.*;
 
 public class PluginEditWorldScreen implements IMixinConfigPlugin {
     //private String c_editWorldScreen;
@@ -31,13 +32,14 @@ public class PluginEditWorldScreen implements IMixinConfigPlugin {
 
     @Override
     public void onLoad(String mixinPackage) {
-        m_makeBackupAndShowToast = mapMethod("net.minecraft.class_524", "method_29784",
+        MappingProvider p = getInstance();
+        m_makeBackupAndShowToast = p.mapMethod("net.minecraft.class_524", "method_29784",
                 "(Lnet/minecraft/class_32;Ljava/lang/String;)V");
-        m_createAccess = mapMethod("net.minecraft.class_32", "method_27002",
+        m_createAccess = p.mapMethod("net.minecraft.class_32", "method_27002",
                 "(Ljava/lang/String;)Lnet/minecraft/class_32$class_5143;");
-        m_joinWorld = mapMethodName("net.minecraft.class_528$class_4272", "method_20164", "()V");
-        m_editWorld = mapMethodName("net.minecraft.class_528$class_4272", "method_20171", "()V");
-        m_recreateWorld = mapMethodName("net.minecraft.class_528$class_4272", "method_20173", "()V");
+        m_joinWorld = p.mapMethodName("net.minecraft.class_528$class_4272", "method_20164", "()V");
+        m_editWorld = p.mapMethodName("net.minecraft.class_528$class_4272", "method_20171", "()V");
+        m_recreateWorld = p.mapMethodName("net.minecraft.class_528$class_4272", "method_20173", "()V");
     }
 
     @Override
