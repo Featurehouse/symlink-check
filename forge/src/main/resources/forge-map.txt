@@ -1,0 +1,10 @@
+v1	intermediary	srg
+CLASS   net/minecraft/class_524	net/minecraft/client/gui/screens/worldselection/EditWorldScreen
+CLASS	net/minecraft/class_32	net/minecraft/world/level/storage/LevelStorageSource
+METHOD	net/minecraft/class_524	(Lnet/minecraft/class_32;Ljava/lang/String;)V	method_29784	m_101260_
+CLASS	net/minecraft/class_32$class_5143	net/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess
+METHOD	net/minecraft/class_32	(Ljava/lang/String;)Lnet/minecraft/class_32$class_5143;	method_27002	m_78260_
+CLASS	net/minecraft/class_528$class_4272	net/minecraft/client/gui/screens/worldselection/WorldSelectionList$WorldListEntry
+METHOD	net/minecraft/class_528$class_4272	()V	method_20164	m_101704_
+METHOD	net/minecraft/class_528$class_4272	()V	method_20171	m_101739_
+METHOD	net/minecraft/class_528$class_4272	()V	method_20173	m_101743_
