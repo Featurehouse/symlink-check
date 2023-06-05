@@ -1,6 +1,6 @@
 {
   "symlink_check.gui.copy_link_to_clipboard": "复制链接到剪贴板",
   "symlink_warning.title": "世界文件夹中存在符号链接",
-  "symlink_warning.message": "当世界文件夹中有符号链接时，如果你不知道你在做什么，加载它将会有风险。请访问 %s 以了解更多信息",
+  "symlink_warning.message": "当前世界文件夹中有符号链接时，如果你不知道你在做什么，加载世界将会有风险。请访问 %s 以了解更多信息",
   "symlink_check.date_format.null": "未知时间"
 }
