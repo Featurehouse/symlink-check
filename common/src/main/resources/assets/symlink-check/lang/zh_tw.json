@@ -1,0 +1,6 @@
+{
+  "symlink_check.gui.copy_link_to_clipboard": "複製鏈接到剪貼簿",
+  "symlink_warning.title": "世界資料夾中存在符號連結（Symbolic link）",
+  "symlink_warning.message": "當前世界資料夾中存在符號連結，如果你不知道你在做什麼，加載此世界有風險，請訪問%s以了解更多消息。",
+  "symlink_check.date_format.null": "未知時間"
+}
